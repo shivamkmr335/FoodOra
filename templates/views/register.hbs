@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/sign-up.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="her">
+        <h1>E-COMMERCE WEBSITE</h1>
+    </div>
+    <input type="checkbox" name="names" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+    </label>
+    <div class="sidebar">
+        <ul class="list1">
+            <li ><a href="../index.html#"><i class="fa fa-home"></i>Home</a></li>
+          
+            <li><a href="../index.html#aboutus"><i class="fa fa-user"></i>Categories</a></li>
+            
+            <li><a href="../index.html#bestoff"><i class="fa fa-tasks"></i>Best Offers</a></li>
+            
+            <li><a href="../index.html#tips"><i class="fa fa-rss"></i>Blog</a></li>
+            
+            <li><a href="../index.html#footer"><i class="fa fa-id-card"></i>Contact</a></li>
+        </ul> 
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa fa-google"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form" action="/register" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control" name="username" placeholder="Enter Username">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="text" id="email" class="form-control" name="email" placeholder="Enter Email ID">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+			 <div class="form-group">
+                <label for="phone">Contact Info</label>
+                <input type="number" id="phone" class="form-control" name="phone" placeholder="Phone Number">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+			 <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" class="form-control" name="address" placeholder="Enter premanent Address">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" class="form-control" name="password" placeholder="Enter Password">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-group">
+                <label for="password2">Re-Enter Password</label>
+                <input type="password" id="password2" class="form-control" name="confirmpassword" placeholder="Enter Password Again">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+			<br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+	<script>
+		const form = document.getElementById('form');
+		const username = document.getElementById('username');
+		const email = document.getElementById('email');
+		const phone = document.getElementById('phone');
+		const address = document.getElementById('address')
+		const password1 = document.getElementById('password1');
+		const password2 = document.getElementById('password2');
+
+		//Event Handlers
+		//form.addEventListener('submit',function(e){
+		//    e.preventDefault();
+		//    checkInput();
+		//});
+
+		//Functions
+		function checkInput(){
+		    const usernameValue = username.value.trim();
+		    const emailValue = email.value.trim();
+			const phoneValue = phone.value.trim();
+			const addressValue = address.value.trim();
+		    const password1Value = password1.value.trim();
+		    const password2Value = password2.value.trim();
+
+		    if(usernameValue === ''){
+		        showError(username,"Username cannot be blank");
+
+		    }
+		    else if(!isUsernameValid(usernameValue)){
+		        showError(username,"Username is not valid");
+		    }
+		    else{
+		        showSuccess(username);
+		    }
+
+			if(addressValue === ''){
+		        showError(address,"Address cannot be blank");
+		    }
+			else{
+				showSuccess(address);
+			}
+
+			if(phoneValue === ''){
+		        showError(phone,"Phone Number cannot be blank");
+		    }
+			else{
+				showSuccess(phone);
+			}
+
+		    if(emailValue === ''){
+		        showError(email,"Email cannot be blank");
+		    }
+		    else if(!isEmailValid(emailValue)){
+		        showError(email,"Email ID is not valid");
+		    }
+		    else{
+		        showSuccess(email);
+		    }
+
+
+		    if(password1Value === ''){
+		        showError(password1,"Password cannot be blank");
+
+		    }
+		    else{
+		        showSuccess(password1);
+		    }
+
+
+		    if(password2Value === ''){
+		        showError(password2,"Password  cannot be blank");
+
+		    }
+		    else if(password2Value != password1Value){
+		        showError(password2,"Password doesn't match");
+		    }
+		    else{
+		        showSuccess(password2);
+		    }
+		}
+
+		function showError(input,msg){
+		    const formControl = input.parentNode;
+		    formControl.className= 'form-control error';
+		    const small = formControl.querySelector('small');
+		    small.innerHTML = msg;
+		}
+
+		function showSuccess(input){
+		    const formControl = input.parentNode;
+		    formControl.className= 'form-control success'; 
+		}
+
+		function isEmailValid(email){
+		    return /^([a-zA-Z0-9\.\-\+]+)@([a-zA-Z0-9\.\-\+]+)\.([a-zA-Z]{2,3})$/.test(email);
+		}
+
+		function isUsernameValid(username){
+		    return /^([a-z]+)$/.test(username);
+		}
+	</script>
+    {{!-- <script src="../js/sign-up.js"></script> --}}
+</body>
+</html>

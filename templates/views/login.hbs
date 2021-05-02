@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="/css/sign-up.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="her">
+        <h1>E-COMMERCE WEBSITE</h1>
+    </div>
+    <input type="checkbox" name="names" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+    </label>
+    <div class="sidebar">
+        <ul class="list1">
+            <li ><a href="../index.html#"><i class="fa fa-home"></i>Home</a></li>
+          
+            <li><a href="../index.html#aboutus"><i class="fa fa-user"></i>Categories</a></li>
+            
+            <li><a href="../index.html#bestoff"><i class="fa fa-tasks"></i>Best Offers</a></li>
+            
+            <li><a href="../index.html#tips"><i class="fa fa-rss"></i>Blog</a></li>
+            
+            <li><a href="../index.html#footer"><i class="fa fa-id-card"></i>Contact</a></li>
+                    </ul>
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa fa-google"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>LOG-IN to your account</h2>
+        </div>
+        <form class="form" id="form" action="/login" method="POST">
+            <div class="form-group">
+                <label for="email">User Mail</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter User Mail ID">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" name="password" placeholder="Enter Password">
+            </div>
+			<br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
