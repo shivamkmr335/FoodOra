@@ -1,3 +1,16 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(22, 21, 21);
+}    
+::-webkit-scrollbar{
+    display: none;
+}
 .footer
 {
     position: fixed;
@@ -19,4 +32,7 @@
 img{
 	height:300px;
 	width: 200px;
+}
+.thumbnail{
+	background-color: rgba(240, 231, 231, 0.726);
 }

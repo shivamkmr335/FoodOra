@@ -49,8 +49,8 @@ app.get("/kart",(req,res)=>{
     res.render("cart") 
 });
 
-app.get("/mens",(req,res)=>{
-    res.render("mens") 
+app.get("/beverages",(req,res)=>{
+    res.render("beverages") 
 });
 
 app.get("/ladies",(req,res)=>{
