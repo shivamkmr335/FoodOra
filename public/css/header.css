@@ -65,7 +65,7 @@ li{
     left:0px;
     background-color: rgba(19, 18, 18, 0.87);
     left: -100%;
-    transition: .7s;
+    transition: .4s;
     z-index: 6;
 }
 .sidebar ul.list1{
@@ -80,18 +80,52 @@ li{
     text-decoration:none;
     color:white;
     font-size:20px;
-    padding: 15px 25px;   
+    padding: 8px 25px;   
 }
 .sidebar ul.list1 li i{
     margin-right: 15px;
 }
-
 .sidebar ul.list1 li a:hover{
     border-left:10px solid white;
     transition: .4s;
 }
+
+/*  */
+#category:hover ~ .list1{
+    opacity: 1;
+}
+
+.sidebar ul.list2{
+    opacity: 0;
+    width: 150px;
+    background-color:  rgba(19, 18, 18, 0.87);
+    border: 2px solid white;
+    position: fixed;
+    top: 114.5px;
+    left: 20vw;
+    list-style: none;
+
+}
+.sidebar ul.list2 li{
+    border-bottom: 2px solid whitesmoke;
+}
+.sidebar ul.list2 li a{
+    display: block;
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    padding: 8px 8px;   
+}
+.sidebar ul.list2 li i{
+    margin-right: 15px;
+}
+
+.sidebar ul.list2 li a:hover{
+    border-left:10px solid white;
+    transition: .4s;
+}
 .social{
-    width: 18.5%;
+    width: 20%;
     position: fixed;
     bottom: 5px;
     font-size: 30px;
@@ -109,9 +143,9 @@ li{
 .social ul li{
     margin-right: 10px;
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding:5px;
+    width: 50px;
+    height: 50px;
+    padding:10px;
     line-height:100%;
     background-color: darkgray;
     border-radius: 50%;

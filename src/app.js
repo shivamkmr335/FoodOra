@@ -53,6 +53,10 @@ app.get("/beverages",(req,res)=>{
     res.render("beverages") 
 });
 
+app.get("/cake",(req,res)=>{
+    res.render("cake") 
+});
+
 app.get("/ladies",(req,res)=>{
     res.render("ladies") 
 });
