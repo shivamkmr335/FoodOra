@@ -9,77 +9,217 @@ rel="stylesheet"
 href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
 integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
 crossorigin="anonymous">
-<link href="/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="/css/index.css" rel="stylesheet" type="text/css"/>
+<link href="/css/header.css" rel="stylesheet" type="text/css"/>
+<link href="/css/footer.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-     <nav class="nav navbar-fixed-top navbar-inverse nave">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand">Ekart</a>
-            </div>
-            <div class="collapse navbar-collapse" id="mynavBar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a href="register" ><span class="glyphicon glyphicon-user"></span> Register</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="banner-image">
-            <div class="inner-banner">
-                <center>
-                    <div class="banner-content">
-                        <h1>Welcome to E-Kart</h1>
-                        <a href="login">
-                            <center>
-                                <button class="btn btn-danger btn-lg active">Shop Now</button>
-                            </center>
-                        </a>
-                    </div>
-                </center>
-            </div>
-        </div>
-    </div>
+    {{>header}}
     <div class="container">
-        <div class="items">
-            <a href="#">
-                <img src="/image/le_reve_1_0.jpg" alt="Mens Collection" class="thumbnail">
-                    <div class="caption">         
-                        <a href="#" class="alert">
-                            <button class=" btn btn-danger btn-lg active">Men's Collections</button>
-                        </a>
-                        <p></p>
-                    </div>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <img src="/image/lad.jpg" alt="Ladies Collection" class="thumbnail">
-                    <div class="caption">         
-                        <a href="#" class="alert">
-                            <button class="btn btn-danger btn-lg active">Ladies Collections</button>
-                        </a>
-                        <p></p>
-                    </div>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <img src="/image/camera01.jpg" alt="Electronics Collection" class="thumbnail">
-                    <div class="caption">         
-                        <a href="#" class="alert">
-                            <button class="btn btn-danger btn-lg active">Electronics Collections</button>
-                        </a>
-                        <p></p>
-                    </div>
-            </a>
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="caption">
+                    <h2>Find The New .......YOU</h2>
+                    <H1 style="color: black;">Dishes made for YOU</H1>
+                    <a href="#">Shop NOW</a>
+                    <br>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="caption">
+                    <a href="#">Shop NOW</a>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error, obcaecati magnam natus perspiciatis iste iure quas.
+                        Fugit numquam assumenda facere. 
+                        Assumenda reiciendis ullam aliquid omnis eaque qui 
+                        veritatis dicta fugit neque quo maiores perspiciatis obcaecati 
+                        dolores molestiae fuga eveniet modi,
+                        praesentium quaerat? Dicta animi asperiores eligendi quo unde
+                        atque eius?</p>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="caption">
+                    <a href="#">Shop NOW</a>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error, obcaecati magnam natus perspiciatis iste iure quas.
+                        Fugit numquam assumenda facere. 
+                        Assumenda reiciendis ullam aliquid omnis eaque qui 
+                        veritatis dicta fugit neque quo maiores perspiciatis obcaecati 
+                        dolores molestiae fuga eveniet modi,
+                        praesentium quaerat? Dicta animi asperiores eligendi quo unde
+                        atque eius?</p>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="caption">
+                    <a href="#">Shop NOW</a>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error, obcaecati magnam natus perspiciatis iste iure quas.
+                        Fugit numquam assumenda facere. 
+                        Assumenda reiciendis ullam aliquid omnis eaque qui 
+                        veritatis dicta fugit neque quo maiores perspiciatis obcaecati 
+                        dolores molestiae fuga eveniet modi,
+                        praesentium quaerat? Dicta animi asperiores eligendi quo unde
+                        atque eius?</p>
+                </div>
+            </div>  
+            <div class="slide slide5">
+                <div class="caption">
+                    <a href="#">Shop NOW</a>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error, obcaecati magnam natus perspiciatis iste iure quas.
+                        Fugit numquam assumenda facere. 
+                        Assumenda reiciendis ullam aliquid omnis eaque qui 
+                        veritatis dicta fugit neque quo maiores perspiciatis obcaecati 
+                        dolores molestiae fuga eveniet modi,
+                        praesentium quaerat? Dicta animi asperiores eligendi quo unde
+                        atque eius?</p>
+                </div>
+            </div>
         </div>
     </div>
+    <div style="clear: both;height:1px"></div>
+    <h1 id="aboutus">CATEGORIES</h1>
+    <br>
+    <div class="Team" >
+        <div class="category-box">
+            <img src="./images/center/1.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Beverages</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="#" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/2.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Snacks</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/woman.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/3.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Soups</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/kids.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/4.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Rolls</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/elctronics.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/5.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Starters</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/kids.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/6.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Main Course</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/elctronics.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/7.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Breads</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/kids.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/9.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Desserts</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="./pages/elctronics.html" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+        <div class="category-box">
+            <img src="./images/center/8.jpg" alt="beard">
+            <div class="category-content">
+                <h2>Cake</h2>
+                <span>NEW STOCKS</span><br><br>
+                <a href="#" class="alert"><b>SHOP NOW</b></a>
+            </div>
+        </div>
+
+    </div>
+
+    {{!-- <div style="clear: both;height:100px"></div>
+    <h1 id="bestoff">TODAY'S BEST OFFERS</h1>
+    <div class="about1">
+        <div class="left">
+            <div class="imag" style="background-image: url('./images/best/Capture.PNG');"> 
+            </div>
+            <div class="imag" style="background-image: url('./images/best/Capture1.PNG');">
+            </div>
+        </div>
+        <div class="right">
+            <div class="imag" style="background-image: url('./images/best/Capture2.PNG');"> 
+            </div>
+            <div class="imag" style="background-image: url('./images/best/Capture3.PNG');">
+            </div>
+        </div>
+    </div> --}}
+
+    <div style="clear:both;height:100px"></div>
+    <h1 id="tips">Healthy Diet Tips And Tricks</h1>
+    <div class="tipsAndTricks">
+        <div class="box">
+            <img src="./images/tips and tricks/1.jpg" alt="html pic" >
+            <h4><b> Base your meals on higher fibre starchy carbohydrates</b></h4>
+            <p class="text">Starchy carbohydrates should make up just over a third of the food you eat. They include potatoes, bread, rice, pasta and cereals.Choose higher fibre or wholegrain varieties, such as wholewheat pasta, brown rice or potatoes with their skins on.They contain more fibre than white or refined starchy carbohydrates and can help you feel full for longer.Try to include at least 1 starchy food with each main meal. Some people think starchy foods are fattening, but gram for gram the carbohydrate they contain provides fewer than half the calories of fat.Keep an eye on the fats you add when you're cooking or serving these types of foods because that's what increases the calorie content – for example, oil on chips, butter on bread and creamy sauces on pasta.</p>
+            <a href="https://www.nhs.uk/live-well/eat-well/eight-tips-for-healthy-eating/">Read More</a>
+        </div>
+        <div class="box">
+            <img src="./images/tips and tricks/2.jpg" alt="html pic" >
+            <h4><b>Eat lots of fruit and veg</b></h4>
+            <p class="text">It's recommended that you eat at least 5 portions of a variety of fruit and veg every day. They can be fresh, frozen, canned, dried or juiced.Getting your 5 A Day is easier than it sounds. Why not chop a banana over your breakfast cereal, or swap your usual mid-morning snack for a piece of fresh fruit?A portion of fresh, canned or frozen fruit and vegetables is 80g. A portion of dried fruit (which should be kept to mealtimes) is 30g.A 150ml glass of fruit juice, vegetable juice or smoothie also counts as 1 portion, but limit the amount you have to no more than 1 glass a day as these drinks are sugary and can damage your teeth.</p>
+            <br><br>
+            <a href="https://www.nhs.uk/live-well/eat-well/eight-tips-for-healthy-eating/">Read More</a>
+        </div>
+        <div class="box">
+            <img src="./images/tips and tricks/3.jpg" alt="html pic" >
+            <h4><b>Eat less salt: no more than 6g a day for adults</b></h4>
+            <p class="text">Eating too much salt can raise your blood pressure. People with high blood pressure are more likely to develop heart disease or have a stroke.Even if you do not add salt to your food, you may still be eating too much.About three-quarters of the salt you eat is already in the food when you buy it, such as breakfast cereals, soups, breads and sauces.Use food labels to help you cut down. More than 1.5g of salt per 100g means the food is high in salt.Adults and children aged 11 and over should eat no more than 6g of salt (about a teaspoonful) a day. Younger children should have even less.
+            </p>
+            <br><br>
+            <a href="https://www.nhs.uk/live-well/eat-well/eight-tips-for-healthy-eating/">Read More</a>
+        </div>
+        <div class="box">
+            <img src="./images/tips and tricks/4.jpg" alt="html pic" >
+            <h4><b>Do not get thirsty</b></h4>
+            <p class="text">You need to drink plenty of fluids to stop you getting dehydrated. The government recommends drinking 6 to 8 glasses every day. This is in addition to the fluid you get from the food you eat. All non-alcoholic drinks count, but water, lower fat milk and lower sugar drinks, including tea and coffee, are healthier choices.Try to avoid sugary soft and fizzy drinks, as they're high in calories. They're also bad for your teeth. Even unsweetened fruit juice and smoothies are high in free sugar.Your combined total of drinks from fruit juice, vegetable juice and smoothies should not be more than 150ml a day, which is a small glass.Remember to drink more fluids during hot weather or while exercising.</p>
+            <br>
+            <a href="https://www.nhs.uk/live-well/eat-well/eight-tips-for-healthy-eating/">Read More</a>
+        </div>
+    </div>
+    <div style="clear:both;height:100px"></div>
     {{>footer2}}
+    <script>
+        let carts=document.querySelectorAll('.alert');
+        for (let i=0;i<carts.length; i++){
+			     carts[i].addEventListener('click',()=>{
+			         alert('Please LogIn or Register');
+			     })
+			}
+    </script>
 </body>
 </html>

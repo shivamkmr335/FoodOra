@@ -91,15 +91,19 @@ li{
 }
 
 /*  */
+.sidebar .list1 li:hover > ul{
+    display: block;
+}
+
 #category:hover ~ .list1{
     opacity: 1;
 }
 
-.sidebar ul.list2{
-    opacity: 0;
+.sidebar .list2{
+    display: none;
     width: 150px;
-    background-color:  rgba(19, 18, 18, 0.87);
-    border: 2px solid white;
+    background-color:  rgba(255, 255, 255, 0.918);
+    border: 2px solid black;
     position: fixed;
     top: 114.5px;
     left: 20vw;
@@ -107,12 +111,12 @@ li{
 
 }
 .sidebar ul.list2 li{
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 .sidebar ul.list2 li a{
     display: block;
     text-decoration:none;
-    color:white;
+    color:black;
     font-size:20px;
     padding: 8px 8px;   
 }
@@ -121,7 +125,7 @@ li{
 }
 
 .sidebar ul.list2 li a:hover{
-    border-left:10px solid white;
+    border-left:10px solid grey;
     transition: .4s;
 }
 .social{
@@ -193,7 +197,7 @@ li{
     color: rgb(255, 255, 255);
 }
 .login{
-    right: 115px;
+    right: 145px;
 }
 .login a{
     padding: 8px;

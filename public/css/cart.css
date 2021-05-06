@@ -24,7 +24,7 @@ img{
 
 .product-header{
     width: 100%;
-    max-width: 900px;
+    max-width: 90vw;
     display: flex;
     justify-content: flex-start;
     border-bottom: 4px solid lightgrey;
@@ -33,7 +33,7 @@ img{
 
 .products{
     width: 100%;
-    max-width: 900px;
+    max-width: 90vw;
     border-bottom: 4px solid lightgrey;
     margin: 0px;
 }

@@ -21,6 +21,9 @@ app.set("view engine", "hbs");
 app.set("views",template_path);
 hbs.registerPartials(partials_path);
 
+app.get("/test",(req,res)=>{
+    res.render("cartTest");
+});
 app.get("/",(req,res)=>{
     res.render("index");
 });
