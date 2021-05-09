@@ -47,14 +47,14 @@ crossorigin="anonymous">
                 Object.values(cartItems).map(item => {
                     productContainer.innerHTML +=`
                     <div class="product">
-                        <ion-icon name="close-circle-outline"></ion-icon>
+                        <ion-icon class="icon" name="close-circle-outline"></ion-icon>
                         <img src="/images/Food_Category/${item.folder}/${item.tag}.jpeg">
 
-                        <span>${item.name}</span>
+                        <span class="name">${item.name}</span>
                     <div class="price">${item.price}.00 ₹</div>
-                    <div class="quantitty">
+                    <div class="quantity">
                         <ion-icon name="remove-circle-outline"></ion-icon>
-                        <span>${item.inCart}</span>
+                        <span class="itemno">${item.inCart}</span>
                         <ion-icon name="add-circle-outline"></ion-icon>
                     </div>
                     <div class="total">

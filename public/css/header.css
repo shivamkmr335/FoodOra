@@ -206,3 +206,7 @@ li{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+.list2 .alert{
+    margin-bottom: 0px;
+}

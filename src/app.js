@@ -21,11 +21,8 @@ app.set("view engine", "hbs");
 app.set("views",template_path);
 hbs.registerPartials(partials_path);
 
-app.get("/test",(req,res)=>{
-    res.render("cartTest");
-});
 app.get("/",(req,res)=>{
-    res.render("index");
+    res.render("start");
 });
 
 app.get("/home",(req,res)=>{
@@ -52,21 +49,17 @@ app.get("/kart",(req,res)=>{
     res.render("cart") 
 });
 
+// Food Pages Rendering
 app.get("/beverages",(req,res)=>{
     res.render("beverages") 
 });
-
 app.get("/cake",(req,res)=>{
     res.render("cake") 
 });
-
-app.get("/ladies",(req,res)=>{
-    res.render("ladies") 
+app.get("/bread",(req,res)=>{
+    res.render("bread") 
 });
 
-app.get("/electronics",(req,res)=>{
-    res.render("electronics") 
-});
 
 app.post("/login", async (req,res)=>{
     console.log("Yaha toh pahuch gaye");
