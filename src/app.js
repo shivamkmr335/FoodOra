@@ -24,6 +24,9 @@ hbs.registerPartials(partials_path);
 app.get("/",(req,res)=>{
     res.render("start");
 });
+app.get("/start",(req,res)=>{
+    res.render("start");
+});
 
 app.get("/home",(req,res)=>{
     res.render("index");
